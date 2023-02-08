@@ -1058,7 +1058,7 @@ p {
   left: 50px;
   transform: translateX(-50%) translateY(-50%); */
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   position: relative;
   background-color: var(--headerbackground-color);
   border-radius: 4px;
@@ -1372,6 +1372,7 @@ button .modal-label>.modal-comment-textarea::placeholder {
 
 .modal-checkbox:checked+.checkbox-custom {
   background-color: var(--accent-color);
+  border-color: transparent;
 }
 
 .modal-checkbox:checked+.checkbox-custom>.checkbox-icon {
@@ -1394,6 +1395,11 @@ button .modal-label>.modal-comment-textarea::placeholder {
   margin-top: 30px;
 
   transition: background-color var(--transition-fast) var(--transition-function);
+}
+
+..button.primary.modal-btn-submit:focus {
+  background-color: var(--button-active);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
 
